@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="style.css">
         <title>Images</title>
     </head>
-    <body>
+    <body onscroll="checkGoToTop()">
         <nav id="navBar">
             <a href="text.html">Text</a>
             <a href="images.html" class="activeTab">Images</a>
@@ -16,29 +16,40 @@
 
         <div id="imagesGallery">
             <div class="imageDiv">
-                <img src="images/japan1.png" alt="Image 1" style="width:100%">
+                <img src="images/japan1.png" alt="Image 1" class="imagesPageImage">
             </div>
             <div class="imageDiv">
-                <img src="images/skyscrapers.png" alt="Image 2" style="width:100%">
+                <img src="images/skyscrapers.png" alt="Image 2" class="imagesPageImage">
             </div>
             <div class="imageDiv">
-                <img src="images/ferris-wheel.png" alt="Image 3" style="width:100%">
+                <img src="images/ferris-wheel.png" alt="Image 3" class="imagesPageImage">
             </div>
             <div class="imageDiv">
-                <img src="images/night2.png" alt="Image 4" style="width:100%">
+                <img src="images/night2.png" alt="Image 4" class="imagesPageImage">
             </div>
             <div class="imageDiv">
-                <img src="images/night1.png" alt="Image 5" style="width:100%">
+                <img src="images/night1.png" alt="Image 5" class="imagesPageImage">
             </div>
             <div class="imageDiv">
-                <img src="images/rain.png" alt="Image 6" style="width:100%">
+                <img src="images/rain.png" alt="Image 6" class="imagesPageImage">
             </div>
             <div class="imageDiv">
-                <img src="images/train.png" alt="Image 7" style="width:100%">
+                <img src="images/train.png" alt="Image 7" class="imagesPageImage">
             </div>
             <div class="imageDiv">
-                <img src="images/japan2.png" alt="Image 8" style="width:100%">
+                <img src="images/japan2.png" alt="Image 8" class="imagesPageImage">
             </div>
         </div>
+
+        <div id="imageOverlay">
+            <div id="imageOverlayBackground"></div>
+            <img src="images/ferris-wheel.png" alt="Image Overlay" id="overlayImage">
+        </div>
+
+        <div id="goToTopButton" onclick="goToTop()">
+            Go to Top
+        </div>
     </body>
+
+    <script src="script.js"></script>
 </html>
