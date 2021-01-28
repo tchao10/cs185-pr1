@@ -1,12 +1,18 @@
 #navBar {
-    background-color: #aaffaa;
+    background-color: #99ff99;
     padding: 10px;
 }
 
-#navBar a{
+#navBar a {
     padding-left: 10px;
     padding-right: 10px;
     font-family: Calibri;
+}
+
+.activeTab {
+    font-weight: bold;
+    background-color: #60df60;
+    padding: 0.15%;
 }
 
 #textForm {
@@ -14,21 +20,63 @@
     font-family: Calibri;
 }
 
-.imagesColumn {
+.imageDiv {
     float: left;
-    width: 22%;
-    padding: 10px;
+    width: 24%;
+    padding: 0.4%;
 }
 
-.videosColumn {
-    float: left;
-    width: 22%;
-    padding: 10px;
+.imageDiv img {
+    padding: 0.7%;
+    border-style: groove;
+    border-color: #888888;
+    border-width: 2px;
 }
 
-.videosIframe {
-    width: 100%;
+.videosDiv {
+    float: left;
+    width: 24%;
+    padding: 0.4%;
+}
+
+.videosDiv iframe {
+    width: 99%;
     height: 300px;
+    padding: 1%;
+    border-style: groove;
+    border-color: #888888;
+    border-width: 2px;
+}
+
+/* Responsiveness for images and videos */
+@media only screen and (max-width: 1350px) {
+    .imageDiv {
+        width: 32%;
+    }
+
+    .videosDiv {
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .imageDiv {
+        width: 49%;
+    }
+
+    .videosDiv {
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .imageDiv {
+        width: 99%;
+    }
+
+    .videosDiv {
+        width: 99%;
+    }
 }
 
 table {
