@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Email Validation</title>
+    </head>
+    <body>
+        <nav id="navBar">
+            <a href="text.html">Text</a>
+            <a href="images.html">Images</a>
+            <a href="videos.html">Videos</a>
+            <a href="table.html">Table</a>
+            <a href="email.html" class="activeTab">Email</a>
+        </nav>
+
+        <form id="emailForm" onsubmit="return false">
+            <h3>Enter your email:</h3>
+            <input type="text" id="emailInput" placeholder="johndoe@gmail.com">
+
+            <br><br>
+
+            <input type="submit" value="Submit" onclick=validateEmail()>
+            <h4 id="emailValidationMessage">Default text that you shouldn't be seeing...</h4>
+        </form>
+    </body>
+</html>
