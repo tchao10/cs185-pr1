@@ -1,3 +1,4 @@
+/* General */
 #navBar {
     background-color: #99ff99;
     padding: 10px;
@@ -15,11 +16,13 @@
     padding: 0.15%;
 }
 
+/* text.html */
 #textForm {
     padding: 10px;
     font-family: Calibri;
 }
 
+/* images.html */
 .imageDiv {
     float: left;
     width: 24%;
@@ -33,6 +36,7 @@
     border-width: 2px;
 }
 
+/* videos.html */
 .videosDiv {
     float: left;
     width: 24%;
@@ -79,6 +83,7 @@
     }
 }
 
+/* table.html */
 table {
     width: 100%;
     border: 1px solid black;
@@ -89,4 +94,17 @@ table {
 th, td {
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+/* email.html */
+#emailForm {
+    padding: 10px;
+    font-family: Calibri;
+}
+
+#emailValidationMessage {
+    display: none;
+    padding: 0.5%;
+    width: 12%;
+    background-color: #acbdce;
 }
