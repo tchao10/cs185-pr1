@@ -2,8 +2,8 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/email.css">
         <title>Email Validation</title>
     </head>
     <body>
@@ -14,15 +14,18 @@
             <a href="table.html">Table</a>
             <a href="email.html" class="activeTab">Email</a>
         </nav>
-
+        
         <form id="emailForm" onsubmit="return false">
             <h3>Enter your email:</h3>
             <input type="text" id="emailInput" placeholder="johndoe@gmail.com">
-
+            
             <br><br>
-
+            
             <input type="submit" value="Submit" onclick=validateEmail()>
             <h4 id="emailValidationMessage">Default text that you shouldn't be seeing...</h4>
         </form>
     </body>
+    
+    <script src="scripts/general.js"></script>
+    <script src="scripts/email.js"></script>
 </html>

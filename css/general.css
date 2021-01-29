@@ -1,0 +1,40 @@
+#navBar {
+    background-color: #99ff99;
+    padding: 10px;
+}
+
+#navBar a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Calibri;
+}
+
+#navBar a:hover {
+    background-color: #60df60;
+}
+
+.activeTab {
+    font-weight: bold;
+    background-color: #60df60;
+    padding: 0.15%;
+}
+
+#goToTopButton {
+    display: none;
+    position: fixed;
+    background-color: #60df60;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    font-family: Calibri;
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#goToTopButton:hover {
+    opacity: 1;
+}
