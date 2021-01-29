@@ -1,0 +1,11 @@
+#emailForm {
+    padding: 10px;
+    font-family: Calibri;
+}
+
+#emailValidationMessage {
+    display: none;
+    padding: 10px;
+    width: 215px;
+    background-color: #acbdce;
+}
